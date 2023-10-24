@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:backgroundTint="#F4511E">
+
+    <TextView
+        android:id="@+id/textViewWidth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ширина поверхности (м)" />
+
+    <EditText
+        android:id="@+id/editTextWidth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textViewHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Высота (длина) поверхности (м)" />
+
+    <EditText
+        android:id="@+id/editTextHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textViewPaintConsumption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Расход краски кв.м/л (м^2/л)" />
+
+    <EditText
+        android:id="@+id/editTextPaintConsumption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textViewLayers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Количество слоев (шт)" />
+
+    <EditText
+        android:id="@+id/editTextLayers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textViewCanVolume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Объем банки (л)" />
+
+    <EditText
+        android:id="@+id/editTextCanVolume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textViewReserve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Запас краски" />
+    <RadioGroup
+        android:id="@+id/radioGroupReserve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton10Percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10%" />
+
+        <RadioButton
+            android:id="@+id/radioButton15Percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15%" />
+
+        <RadioButton
+            android:id="@+id/radioButtonNoReserve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Без запаса" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:backgroundTint="#F4511E"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Рассчитать" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Результат: " />
+
+</LinearLayout>
